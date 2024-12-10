@@ -10,7 +10,7 @@ class HabrClient
   BASE_URI = 'https://career.habr.com/api/v1'
 
   METHODS = {
-    vacansies: 'vacancies'
+    vacancies: 'vacancies'
   }.freeze
 
   FILTERS = {
@@ -46,7 +46,7 @@ class HabrClient
   }.freeze
 
   def self.request
-    url = "#{BASE_URI}/#{METHODS[:vacansies]}"
+    url = "#{BASE_URI}/#{METHODS[:vacancies]}"
     uri = add_params(url,
                      access_token: ACCESS_TOKEN, skip_with_salary: 0,
                      skip_company_filled: 0,
